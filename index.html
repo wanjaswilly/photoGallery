@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        /**
+        * created by : wanja wilson 
+        * Github     : https://github.com/wanjaswilly
+        * twitter    : @wanjaswilly
+        * Website    : https://wanjaswilly.com/blog-themes/photoGallery
+        * Contact    : +254790052730 / +254741400006 
+        * 
+        * */
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/app.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- header -->
+    <nav id="header">
+        <a href="#home">Home</a>
+        <a href="#xbox">Albums</a>
+        <a href="#cmos" id="upload">Upload</a>
+      </nav>
+      <div class="content">
+
+      </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="closeModal">&times;</span>
+            <h2>Upload A Picture or an Album</h2>
+          </div>
+          <div class="modal-body">
+            <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
+                <div id="drag_upload_file">
+                    <p>Drop file here</p>
+                    <p>or</p>
+                    <p><input type="button" value="Select File" onclick="file_explorer();" /></p>
+                    <input type="file" id="selectfile" />
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="submit"  class="btn info">Upload</button>
+              <button type="button" class="closeModal btn danger">Close</button>
+          </div>
+        </div>
+      
+      </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
