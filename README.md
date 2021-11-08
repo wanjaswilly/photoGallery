@@ -1,0 +1,2 @@
+# photoGallery
+simple gallery theme
